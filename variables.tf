@@ -3,9 +3,9 @@
 #---------------------------------------------------------
 variable "ibm_sl_username" {}
 
-variable "ibmcloud_iaas_api_key" {}
+variable "ibm_sl_api_key" {}
 
-variable "ibmcloud_api_key" {}
+variable "ibm_bmx_api_key" {}
 
 
 #---------------------------------------------------------
