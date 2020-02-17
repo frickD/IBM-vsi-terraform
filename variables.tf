@@ -1,20 +1,6 @@
 #---------------------------------------------------------
 # MODIFY VARIABLES AS NEEDED
 #---------------------------------------------------------
-#variable "iaas_classic_username" {}
-
-#variable "iaas_classic_api_keyy" {}
-
-# variable "ibmcloud_api_key" {}
-
-
-#---------------------------------------------------------
-## DEFINE sshkey to be used for compute instances
-#---------------------------------------------------------
-#variable "ssh_keyname" {
-#          description = "add your SSH Key"
-#          default = "" 
-#         }
 
 #---------------------------------------------------------
 ## DEFINE Ressource Group (IAM)
@@ -24,9 +10,7 @@ variable "resource_group" {
   default = "default"
 }
 
-
 #---------------------------------------------------------
-
 
 variable "server-name" {
   default = "servername"
