@@ -1,17 +1,12 @@
 #---------------------------------------------------------
 # MODIFY VARIABLES AS NEEDED
 #---------------------------------------------------------
-variable "iaas_classic_username" {
-          description = "add your IBM Cloud username"
-                  }
+variable "iaas_classic_username" {}
 
-variable "ibmcloud_iaas_api_key" {
-          description = "add your IBM Cloud IaaS API Key
-	            }
+variable "ibmcloud_iaas_api_key" {}
 
-variable "ibmcloud_api_key" {
-          description = "add your IBM Cloud API Key
-                    }
+variable "ibmcloud_api_key" {}
+
 
 #---------------------------------------------------------
 ## DEFINE sshkey to be used for compute instances
