@@ -3,18 +3,15 @@
 #---------------------------------------------------------
 variable "iaas_username" {
           description = "add your IBM Cloud username"
-          default = ""
-          }
+                  }
 
 variable "ibmcloud_iaas_api_key" {
           description = "add your IBM Cloud IaaS API Key
-	  default = ""
-          }
+	            }
 
 variable "ibmcloud_api_key" {
           description = "add your IBM Cloud API Key
-          default = ""
-          }
+                    }
 
 #---------------------------------------------------------
 ## DEFINE sshkey to be used for compute instances
