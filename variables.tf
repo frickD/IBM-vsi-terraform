@@ -1,9 +1,9 @@
 #---------------------------------------------------------
 # MODIFY VARIABLES AS NEEDED
 #---------------------------------------------------------
-variable "iaas_classic_username" {}
+#variable "iaas_classic_username" {}
 
-variable "iaas_classic_api_keyy" {}
+#variable "iaas_classic_api_keyy" {}
 
 # variable "ibmcloud_api_key" {}
 
