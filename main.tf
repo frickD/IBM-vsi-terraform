@@ -8,7 +8,7 @@ resource "ibm_compute_vm_instance" "terraform-bulk-vms" {
     domain = "poc.com"
   }
   os_reference_code    = "${var.ibmcloud_OS-system}"
-  datacenter           = "fra05"
+  datacenter           = "${var.ibmcloud_datacenter}"
   network_speed        = 1000
   hourly_billing       = true
   private_network_only = true
