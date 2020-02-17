@@ -1,10 +1,10 @@
 resource "ibm_compute_vm_instance" "terraform-bulk-vms" {
   bulk_vms {
-    hostname = "${server-name}-vm1"
+    hostname = "${var.server-name}-vm1"
     domain = "poc.com"
   }
   bulk_vms {
-    hostname = "${server-name}-vm2"
+    hostname = "${var.server-name}-vm2"
     domain = "poc.com"
   }
   os_reference_code    = "${var.ibmcloud_OS-system}"
