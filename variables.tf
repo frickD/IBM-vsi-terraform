@@ -32,10 +32,6 @@ variable "server-name" {
   default = "servername"
 }
 
-variable "server-count" {
-  default = 1
-}
-
 variable "ibmcloud_timeout" {
    default = 300
 }
