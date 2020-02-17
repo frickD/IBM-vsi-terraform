@@ -7,7 +7,7 @@ resource "ibm_compute_vm_instance" "terraform-bulk-vms" {
     hostname = "poc-vm2"
     domain = "poc.com"
   }
-  os_reference_code    = "WIN_2012-STD-R2_64"
+  os_reference_code    = var.ibmcloud_OS-system
   datacenter           = "fra05"
   network_speed        = 1000
   hourly_billing       = true
