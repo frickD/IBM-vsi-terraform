@@ -33,8 +33,8 @@ variable "server-name" {
 }
 
 variable "ibmcloud_datacenter" {
-   description = "you can use following data center in Frankfurt: FRA02 , FRA04, FRA05"
-   default = "FRA02"
+   description = "you can use following data center in Frankfurt: fra02 , fra04, fra05"
+   default = "fra02"
   }
 
 variable "ibmcloud_OS-system" {
