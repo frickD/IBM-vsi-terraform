@@ -1,7 +1,7 @@
 #---------------------------------------------------------
 # MODIFY VARIABLES AS NEEDED
 #---------------------------------------------------------
-variable "iaas_username" {
+variable "iaas_classic_username" {
           description = "add your IBM Cloud username"
                   }
 
