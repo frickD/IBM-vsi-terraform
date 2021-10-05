@@ -1,4 +1,17 @@
+#-------------------------------------------------------
 # variables supplied from terraform.tfvars
+# Please update and check necessary Terraform version. 
+# information is available at Terraform provider Doc.
+#-------------------------------------------------------
+
+terraform {
+  required_providers {
+    ibm = {
+      source = "IBM-Cloud/ibm"
+      version = ">=1.14.0"
+    }
+  }
+}
 
 variable "iaas_classic_username" {}
 variable "iaas_classic_api_key" {}
