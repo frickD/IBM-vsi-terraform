@@ -39,17 +39,6 @@ resource "ibm_firewall_policy" "rules" {
     src_ip_cidr          = 0
     dst_ip_address       = "any"
     dst_ip_cidr          = 32
-    dst_port_range_start = 22
-    dst_port_range_end   = 22
-    notes                = "Allow SSH"
-    protocol             = "tcp"
-  }
-  rules {
-    action               = "permit"
-    src_ip_address       = "0.0.0.0"
-    src_ip_cidr          = 0
-    dst_ip_address       = "any"
-    dst_ip_cidr          = 32
     dst_port_range_start = 3389
     dst_port_range_end   = 3389
     notes                = "Allow RDH UDP port"
