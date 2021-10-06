@@ -13,11 +13,11 @@ variable "resource_group" {
 #---------------------------------------------------------
 
 variable "server-name" {
-  default = "veeam-os360-server"
+  default = "veeamos360"
 }
 
 variable "domain-name" {
-  default = "domain"
+  default = "test.com"
 }
 
 variable "ibmcloud_datacenter" {
