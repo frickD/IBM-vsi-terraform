@@ -22,7 +22,7 @@ variable "resource_group" {
 #---------------------------------------------------------
 
 variable "server-name" {
-  default = "servername"
+  default = "veeam-os360-server"
 }
 
 variable "domain-name" {
