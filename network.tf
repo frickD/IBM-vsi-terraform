@@ -2,7 +2,7 @@
 # define Public VLAN , Network and Firewall
 #---------------------------------------------------------
 resource "ibm_network_vlan" "veeam_os360_vlan" {
-  name            = "${var.vlan_name}"
+  name            = "veeam_os360_vlan"
   datacenter      = "${var.ibmcloud_datacenter}"
   type            = "PUBLIC"
   router_hostname = "fcr01a.${var.ibmcloud_datacenter}"
