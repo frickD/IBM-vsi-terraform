@@ -1,12 +1,4 @@
 #---------------------------------------------------------
-# public SSH key
-#---------------------------------------------------------
-resource "ibm_compute_ssh_key" "ssh_key_vsi" {
-  label      = var.ssh_label
-  public_key = var.ssh_public_key
-}
-
-#---------------------------------------------------------
 # Create instance VSI
 #---------------------------------------------------------
 resource "ibm_compute_vm_instance" "veeam-os360-server" {
@@ -21,9 +13,7 @@ resource "ibm_compute_vm_instance" "veeam-os360-server" {
   memory               = 8192
   disks                = [100]
   local_disk           = false
-  ssh_key_ids = [
-    ibm_compute_ssh_key.ssh_key_vsi.id,
-  ]
+  
   #provisioner "remote-exec" {
   #  script = "remote_sw_deploy.sh"
   #}
