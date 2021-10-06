@@ -25,6 +25,10 @@ variable "server-name" {
   default = "servername"
 }
 
+variable "domain-name" {
+  default = "domain"
+}
+
 variable "ibmcloud_datacenter" {
    description = "you can use following data center in Frankfurt: fra02 , fra04, fra05"
    default = "fra02"
