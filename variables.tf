@@ -13,7 +13,7 @@ variable "resource_group" {
 #---------------------------------------------------------
 
 variable "server-name" {
-  default = "veeamos360"
+  default = "veeamos365"
 }
 
 variable "domain-name" {
