@@ -15,7 +15,7 @@ resource "ibm_compute_vm_instance" "veeam-os365-server" {
   local_disk           = false
   public_vlan_id       = "${var.ibmcloud_pulic_vlan_id}"
   private_vlan_id      = "${var.ibmcloud_private_vlan_id}"
-  public_security_group_ids    = ibm_security_group.secgroup1.id
+  public_security_group_ids    = "${ibm_security_group.secgroup1.id}"
   
   #provisioner "remote-exec" {
   #  script = "remote_sw_deploy.sh"
