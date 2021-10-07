@@ -1,7 +1,7 @@
 #---------------------------------------------------------
 # Create instance VSI
 #---------------------------------------------------------
-resource "ibm_compute_vm_instance" "veeam-os360-server" {
+resource "ibm_compute_vm_instance" "veeam-os365-server" {
   hostname = "${var.server-name}"
   domain = "${var.domain-name}"
   os_reference_code    = "${var.ibmcloud_OS-system}"
