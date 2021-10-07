@@ -11,7 +11,6 @@
 #  name            = "veeam_os360_vlan"
 #  datacenter      = "${var.ibmcloud_datacenter}"
 #  type            = "PUBLIC"
-#  router_hostname = "fcr01a.${var.ibmcloud_datacenter}"
 #  tags = [
 #    "veeam-os360",
 #  ]
