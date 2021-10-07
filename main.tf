@@ -13,6 +13,8 @@ resource "ibm_compute_vm_instance" "veeam-os360-server" {
   memory               = 8192
   disks                = [100]
   local_disk           = false
+  public_vlan_id       = "${var.ibmcloud_pulic_vlan_id}"
+  private_vlan_id      = "${var.ibmcloud_private_vlan_id}"
   
   #provisioner "remote-exec" {
   #  script = "remote_sw_deploy.sh"
