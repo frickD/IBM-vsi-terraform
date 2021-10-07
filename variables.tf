@@ -25,6 +25,11 @@ variable "ibmcloud_datacenter" {
    default = "fra02"
   }
 
+#----------------------------------------------------------
+# The VLAN-ID is not the VLAN name from Portal, you can find
+# this number in URL like https://cloud.ibm.com/classic/network/vlans/xxxxxxx
+# The VLAN-ID has 7 digits
+#----------------------------------------------------------
 variable "ibmcloud_pulic_vlan_id" {
    description = "you can add the existing public VLAN-ID from traget data center"
   }
