@@ -22,6 +22,6 @@ resource "ibm_compute_vm_instance" "veeam-os365-server" {
   #  script = "remote_sw_deploy.sh"
   #}
   tags = [
-    "${var.server_tag[0]}"
+    "${var.server_tag[1]}"
   ]
 }
