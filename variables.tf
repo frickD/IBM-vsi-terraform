@@ -2,21 +2,6 @@
 # MODIFY VARIABLES AS NEEDED
 #---------------------------------------------------------
 
-#---------------------------------------------------------
-## DEFINE Ressource Group veeam-os365  or using default
-#---------------------------------------------------------
-#variable "resource_group" {
-#  description = "The Ressource Roup must be defined in IBM Cloud IAM"
-#  default = "default"
-#}
-
-# Create new resource group
-resource "ibm_resource_group" "resource_group" {
-  name     = "veeam-os365"
-}
-
-#---------------------------------------------------------
-
 variable "server-name" {
   default = "veeamos365"
 }
