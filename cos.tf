@@ -25,7 +25,7 @@ resource "ibm_resource_group" "resourcegroup" {
 resource "ibm_resource_instance" "veeam_cos_instance" {
   name              = "veeam-cos-instance"
 # resource_group_id = "${var.resourcegroup}"
-  resource_group_id = data.ibm_resource_group.resourcegroup.id
+  resource_group_id = ibm_resource_group.resourcegroup.id
   service           = "veeam-OS365-Bucket"
   location          = "global"
   plan              = "standard"
