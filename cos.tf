@@ -15,6 +15,10 @@ resource "ibm_resource_group" "resourcegroup" {
   name     = "veeam-os365"
 }
 
+data "ibm_resource_group" "resourcegroup" {
+  name = "veeam-os365"
+}
+
 #---------------------------------------------------------
 
 
