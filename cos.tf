@@ -36,7 +36,7 @@ resource "ibm_resource_instance" "veeam_cos_instance" {
 #---------------------------------------------------------
 resource "ibm_cos_bucket" "veeam_cos_instance_bucket" {
   bucket_name           = "veeam-cos-bucket"
-  resource_instance_id  = ibm_resource_instance.cos_instance.id
+  resource_instance_id  = ibm_resource_instance.veeam_cos_instance.id
   region_location       = "eu-de"
   storage_class         = "smart"
 }
