@@ -26,9 +26,9 @@ resource "ibm_resource_instance" "veeam_cos_instance" {
   name              = "veeam-os395-instance"
 # resource_group_id = "${var.resourcegroup}"
   resource_group_id = ibm_resource_group.resourcegroup.id
-  service           = "cloud-object-storage"
-  location          = "global"
-  plan              = "standard"
+  service           = "cloud-object-storage"               # Do not modify
+  location          = "global"                             # Do not modify
+  plan              = "standard"                           # is standard or lite
 }
 
 #---------------------------------------------------------
