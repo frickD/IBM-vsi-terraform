@@ -21,4 +21,7 @@ resource "ibm_compute_vm_instance" "veeam-os365-server" {
   #provisioner "remote-exec" {
   #  script = "remote_sw_deploy.sh"
   #}
+  tags = [
+    "${var.server_tag[0]}"
+  ]
 }
