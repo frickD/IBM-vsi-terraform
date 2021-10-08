@@ -6,6 +6,10 @@ variable "server-name" {
   default = "veeamos365"
 }
 
+variable "server_tag" {
+  default = "veeamos365"
+}
+
 variable "domain-name" {
   default = "test.com"
 }
