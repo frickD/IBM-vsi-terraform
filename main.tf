@@ -10,7 +10,6 @@ resource "ibm_compute_vm_instance" "veeam-os365-server" {
   network_speed        = 1000
   hourly_billing       = true
   private_network_only = false
-  local_disk           = false
   flavor_key_name      = "${var.flavor_name}"
   public_vlan_id       = "${var.ibmcloud_pulic_vlan_id}"
   private_vlan_id      = "${var.ibmcloud_private_vlan_id}"
