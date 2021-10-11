@@ -8,8 +8,8 @@ If you have no IBM Cloud Account, please start with following pre-requsit:
 1. Setup an [IBM Cloud Account](https://cloud.IBM.com/)
 2. The IBM Cloud user name from your profile. This information is available in Cloud Account. Use Menue > Manage > Access (IAM) > Users. In User Detail section under VPN Password is the User name available.
 3. The IBM Classic infrastructure API key is also availabe in the user section.
-4. [define a Ressource Group in IAM](https://cloud.ibm.com/account/resource-groups/) like: veeam-os365. This ressource group will automatic defined in cos.tf
-5. [define an IBM Cloud API key:](https://cloud.ibm.com/iam/apikeys/)
+4. define a [Ressource Group in IAM](https://cloud.ibm.com/account/resource-groups/) like: veeam-os365. This ressource group will automatic defined in cos.tf
+5. define an [IBM Cloud API key:](https://cloud.ibm.com/iam/apikeys/)
 
 Using the **IBM Schematics** service, it is **not** necessary to install Terraform, CLI on you local mashine. You can use it integrated in IBM Cloud Web GUI. A workspace can be added in Schematics with direct connection to GitHuB to access the Terrform definition.
 
