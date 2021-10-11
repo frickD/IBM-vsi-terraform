@@ -24,7 +24,7 @@ variable "ibmcloud_datacenter" {
 #-----------------------------------------------------------
 variable "account_unique_value" {
   description = "value to create unique cos name"
-  default = "veeam_os365_backup_${var.iam_account_settings.account_id}"
+  default = "veeamos365-"
 }
 
 #----------------------------------------------------------
