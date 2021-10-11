@@ -2,17 +2,11 @@
 # MODIFY VARIABLES AS NEEDED
 #---------------------------------------------------------
 
-#---------------------------------------------------------
-## DEFINE Ressource Group (IAM)
-#---------------------------------------------------------
-variable "resource_group" {
-  description = "The Ressource Roup must be defined in IBM Cloud IAM"
-  default = "default"
+variable "server-name" {
+  default = "veeamos365"
 }
 
-#---------------------------------------------------------
-
-variable "server-name" {
+variable "server_tag" {
   default = "veeamos365"
 }
 
@@ -24,6 +18,14 @@ variable "ibmcloud_datacenter" {
    description = "you can use following data center in Frankfurt: fra02 , fra04, fra05"
    default = "fra02"
   }
+
+#-----------------------------------------------------------
+# cos variable to define unique instance and bucket name
+#-----------------------------------------------------------
+variable "account_unique_value" {
+  description = "value to create unique cos name"
+  default = "veeamos365-"
+}
 
 #----------------------------------------------------------
 # The VLAN-ID is not the VLAN name from Portal, you can find
@@ -42,6 +44,12 @@ variable "ibmcloud_OS-system" {
    description = "you can deploy different OS system on VSI like WIN / Linux. Use the specific image reference code like WIN_2012-STD-R2_64 or CENTOS_LATEST_64  . use CLI comand: $ibmcloud sl vs options"
    default = "WIN_LATEST_64"
 }
+
+variable "flavor_name" {
+   description = "you can deploy different flavor for VSI like BL2_4X8X100 / BL1_4X16X100 / M1_4X32X100 .  Use CLI comand: $ibmcloud sl vs options"
+   default = "BL2_4X8X100"
+}
+
 
 variable "ibmcloud_timeout" {
    default = 300
