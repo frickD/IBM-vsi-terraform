@@ -22,7 +22,7 @@ resource "ibm_resource_group" "resourcegroup" {
 #---------------------------------------------------------
 # Create COS Instance
 #---------------------------------------------------------
-resource "ibm_resource_instance" "veeam_cos_instance" {
+resource "ibm_resource_instance" "veeam_backup_cos_instance_1" {
   name              = "veeam-os395-instance"
 # resource_group_id = "${var.resourcegroup}"
   resource_group_id = ibm_resource_group.resourcegroup.id
@@ -34,7 +34,7 @@ resource "ibm_resource_instance" "veeam_cos_instance" {
 #---------------------------------------------------------
 # Create COS Bucket
 #---------------------------------------------------------
-resource "ibm_cos_bucket" "veeam_cos_instance_bucket" {
+resource "ibm_cos_bucket" "veeam_backup_cos_instance_bucket_1" {
   bucket_name           = "veeam-os365-bucket"
   resource_instance_id  = ibm_resource_instance.veeam_cos_instance.id
   region_location       = "eu-de"
