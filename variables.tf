@@ -46,8 +46,8 @@ variable "ibmcloud_OS-system" {
 }
 
 variable "flavor_name" {
-   description = "you can deploy different flavor for VSI like BL1_4X16X100 / M1_2X16X100 .  use CLI comand: $ibmcloud sl vs options"
-   default = "BL1_4X16X100"
+   description = "you can deploy different flavor for VSI like BL2.4x16 / BL2.8x16 / M1.4x32 .  use CLI comand: $ibmcloud sl vs options"
+   default = "BL2.4x16"
 }
 
 
