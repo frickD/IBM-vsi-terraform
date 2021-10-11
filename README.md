@@ -36,7 +36,7 @@ It is only possible to access the server via Remote Desktop. Therefore only port
 With IBM Schematics, it is very easy to switch between VSI flavours. So, please validate the list via [Cloud Shell](https://cloud.ibm.com/shell): 
 ``$ibmcloud sl vs options``
 
-The default flavor is: BL1_4X16X100
+The default flavor is: ``BL1_4X16X100``
 
 It is also possible to get the information of available images out of Cloud CLI with following comand: 
 ``$ibmcloud is images``   
