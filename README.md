@@ -32,6 +32,8 @@ After the infrastructure is deployed you can test it. Logon into the server: ``$
 
 It is only possible to access the server via Remote Desktop. Therefore only port 3389 and ping is allowed.
 
+A COS Instance and Bucket is defined for Region EU-DE with storage class SMART.
+
 ## Change VSI flavors
 With IBM Schematics, it is very easy to switch between VSI flavours. So, please validate the list via [Cloud Shell](https://cloud.ibm.com/shell): 
 ``$ibmcloud sl vs options``
