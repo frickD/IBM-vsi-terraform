@@ -5,7 +5,7 @@ This Terraform project provide an example for a simple Virtual Provate Cloud (VP
 If you have no IBM Cloud Account, please start with following pre-requsit:
 
 ## Pre-requisit:
-1. [Setup an IBM Cloud Account at](https://cloud.IBM.com/)
+1. Setup an [IBM Cloud Account](https://cloud.IBM.com/)
 2. The IBM Cloud user name from your profile. This information is available in Cloud Account. Use Menue > Manage > Access (IAM) > Users. In User Detail section under VPN Password is the User name available.
 3. The IBM Classic infrastructure API key is also availabe in the user section.
 4. [define a Ressource Group in IAM](https://cloud.ibm.com/account/resource-groups/) like: veeam-os365. This ressource group will automatic defined in cos.tf
