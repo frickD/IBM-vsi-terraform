@@ -5,7 +5,7 @@ data "ibm_iam_account_settings" "iam_account_settings" {
 }
 variable "account_unique_value" {
   description = "value to create unique cos name"
-  account_unique_value = "veeam_os365_backup_"+iam_account_settings.account_id
+  default = "veeam_os365_backup_"+iam_account_settings.account_id
 }
 #---------------------------------------------------------
 ## DEFINE Ressource Group veeam-os365  or using default
