@@ -37,6 +37,12 @@ variable "ibmcloud_OS-system" {
    default = "WIN_LATEST_64"
 }
 
+variable "flavor_name" {
+   description = "you can deploy different flavor for VSI like BL1_4X16X100 / M1_2X16X100 .  use CLI comand: $ibmcloud sl vs options"
+   default = "BL1_4X16X100"
+}
+
+
 variable "ibmcloud_timeout" {
    default = 300
 }
