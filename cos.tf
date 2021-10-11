@@ -36,7 +36,7 @@ resource "ibm_resource_instance" "veeam_backup_cos_instance_1" {
 #---------------------------------------------------------
 resource "ibm_cos_bucket" "veeam_backup_cos_instance_bucket_1" {
   bucket_name           = "veeam-os365-bucket"
-  resource_instance_id  = ibm_resource_instance.veeam_cos_instance.id
+  resource_instance_id  = ibm_resource_instance.veeam_backup_cos_instance_1.id
   region_location       = "eu-de"
   storage_class         = "smart"
 }
