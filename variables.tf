@@ -19,6 +19,14 @@ variable "ibmcloud_datacenter" {
    default = "fra02"
   }
 
+#-----------------------------------------------------------
+# cos variable to define unique instance and bucket name
+#-----------------------------------------------------------
+variable "account_unique_value" {
+  description = "value to create unique cos name"
+  default = "veeam_os365_backup_${var.iam_account_settings.account_id}"
+}
+
 #----------------------------------------------------------
 # The VLAN-ID is not the VLAN name from Portal, you can find
 # this number in URL like https://cloud.ibm.com/classic/network/vlans/xxxxxxx
