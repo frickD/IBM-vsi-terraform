@@ -28,7 +28,7 @@ With the  IBM-vsi-Terraform example, you can deploy following architecture:
 
 After the infrastructure is deployed you can test it. Logon into the server: ``$ssh root@server-ip``
 
-<img src="https://github.com/JoachimFischer/IBM-vsi-Terraform/blob/master/Image/veeam-os365.png" width="700">
+<img src="https://github.com/JoachimFischer/IBM-vsi-terraform/tree/master/Images/veeam-os365.png" width="700">
 
 It is only possible to access the server via Remote Desktop. Therefore only port 3389 and ping is allowed.
 
