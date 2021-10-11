@@ -1,7 +1,12 @@
 #-----------------------------------------------------
 # Create COS Instance for Veeam OS365 backup
 #-----------------------------------------------------
-
+data "ibm_iam_account_settings" "iam_account_settings" {
+}
+variable "account_unique_value" {
+  description = "value to create unique cos name"
+  account_unique_value = "veeam_os365_backup_"+iam_account_settings.account_id
+}
 #---------------------------------------------------------
 ## DEFINE Ressource Group veeam-os365  or using default
 #---------------------------------------------------------
@@ -22,7 +27,7 @@ resource "ibm_resource_group" "resourcegroup" {
 #---------------------------------------------------------
 # Create COS Instance
 #---------------------------------------------------------
-resource "ibm_resource_instance" "veeam_backup_cos_instance_1" {
+resource "ibm_resource_instance" "${var.account_unique_value}" {
   name              = "veeam-os395-instance"
 # resource_group_id = "${var.resourcegroup}"
   resource_group_id = ibm_resource_group.resourcegroup.id
@@ -34,9 +39,9 @@ resource "ibm_resource_instance" "veeam_backup_cos_instance_1" {
 #---------------------------------------------------------
 # Create COS Bucket
 #---------------------------------------------------------
-resource "ibm_cos_bucket" "veeam_backup_cos_instance_bucket_1" {
+resource "ibm_cos_bucket" "${var.account_unique_value}" {
   bucket_name           = "veeam-os365-bucket"
-  resource_instance_id  = ibm_resource_instance.veeam_backup_cos_instance_1.id
+  resource_instance_id  = ibm_resource_instance.${var.account_unique_value}.id
   region_location       = "eu-de"
   storage_class         = "smart"
 }
