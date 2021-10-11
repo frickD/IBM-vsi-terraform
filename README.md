@@ -36,7 +36,7 @@ A COS Instance and Bucket is defined for Region EU-DE with storage class SMART.
 
 ## Change VSI flavors
 With IBM Schematics, it is very easy to switch between VSI flavours. So, please validate the list via [Cloud Shell](https://cloud.ibm.com/shell): 
-``$ibmcloud sl vs options`` BL2.4x16 / BL2.8x16 / M1.4x32
+``$ibmcloud sl vs options`` BL2_4X8X100 / BL1_4X16X100 / M1_4X32X100
 
 The default flavor is: ``BL2.4x16``
 
